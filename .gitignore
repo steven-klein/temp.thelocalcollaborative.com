@@ -1,9 +1,7 @@
-# build files
-dist
-
 # local environment
 .env
 
 # node/npm
 node_modules
 npm-debug.log
+yarn-debug.log
