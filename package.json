@@ -7,10 +7,10 @@
     "scripts": {
         "build": "npm-run-all --serial clean --parallel copy js css templates",
         "build:prod": "cross-env NODE_ENV=production run-s build",
-        "clean": "del-cli dist",
+        "clean": "del-cli docs",
         "copy": "npm-run-all --parallel copy:**",
-        "copy:img": "cpx \"src/assets/img/**/*.{jpg,jpeg,gif,png,svg}\" dist/assets/img",
-        "copy:htaccess": "cpx src/.htaccess dist",
+        "copy:img": "cpx \"src/assets/img/**/*.{jpg,jpeg,gif,png,svg}\" docs/assets/img",
+        "copy:htaccess": "cpx src/.htaccess docs",
         "css": "postcss -c build/postcss.config.js",
         "js": "rollup -c build/rollup.config.js",
         "postversion": "git push && git push --tags",

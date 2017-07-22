@@ -11,7 +11,7 @@ var path          = require('path');
 Metalsmith(path.resolve(__dirname, '../'))
   .metadata(require('./../src/data'))
   .source('src/templates/pages')
-  .destination('dist')
+  .destination('docs')
   .clean(false)
   .use(markdown())
   .use(permalinks())

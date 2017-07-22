@@ -8,7 +8,7 @@ let cache;
 
 export default {
     entry: 'src/assets/js/app.js',
-    dest: 'dist/assets/js/app.js',
+    dest: 'docs/assets/js/app.js',
     cache: cache,
     format: 'iife',
     useStrict: true,

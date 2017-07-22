@@ -1,6 +1,6 @@
 var POSTCSS = {
     "input": "src/assets/css/app.css",
-    "output": "dist/assets/css/app.css",
+    "output": "docs/assets/css/app.css",
     "use": [
         "postcss-import",
         "postcss-cssnext",
