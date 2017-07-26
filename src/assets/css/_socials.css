@@ -1,0 +1,36 @@
+.socials-links {
+  list-style-type: none;
+  & li {
+    & > a {
+    display: block;
+    position: relative;
+    padding-left: 4rem;
+
+      &::before {
+        font-family: 'FontAwesome';
+        content: '';
+        display: inline-block;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4rem;
+        line-height: 1;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      &.instagram::before {
+        content: '\f16d';
+      }
+
+      &.facebook::before {
+        content: '\f09a';
+      }
+
+    }
+
+  }
+
+}
