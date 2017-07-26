@@ -16,7 +16,7 @@
     "css": "postcss -c build/postcss.config.js",
     "js": "rollup -c build/rollup.config.js",
     "postversion": "git push && git push --tags",
-    "release": "npm run build:prod && git commit -am \"release\" && npm version patch",
+    "release": "npm run build:prod && npm version patch",
     "serve": "browser-sync start -c build/browsersync.config.js",
     "test": "npm run build:prod",
     "templates": "node build/metalsmith.config.js",
