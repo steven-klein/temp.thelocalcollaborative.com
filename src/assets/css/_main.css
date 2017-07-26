@@ -1,15 +1,50 @@
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: var(--baseFont);
   font-weight: normal;
   letter-spacing: normal;
+  font-size: 1.5rem;
+  line-height: 1.5;
   color: var(--darkColor);
+
+  &::after, &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    display: block;
+    background: url('../img/veg.jpg') no-repeat center center scroll var(--secondaryColor);
+    background-size: cover;
+  }
+
+  &::after {
+    background: rgba(0, 0, 0, 0.35);
+  }
 }
 
 :--titles {
   font-family: var(--secondaryFont);
 }
 
+a {
+  color: var(--complimentaryColor);
+}
+
+.site-wrapper {
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
 .main {
-  padding-top: 8rem;
+  padding-top: 12rem;
   padding-bottom: 8rem;
 }

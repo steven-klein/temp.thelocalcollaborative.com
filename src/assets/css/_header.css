@@ -1,8 +1,14 @@
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   background: var(--primaryColor);
   color: var(--nearWhite);
   padding-top: 1rem;
   padding-bottom: 1rem;
+  box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, 0.25);
 
   & a {
     color: var(--nearWhite);
@@ -17,7 +23,7 @@
     line-height: 0;
     color: transparent;
     display: block;
-    max-width: 12rem; /*(120px)*/
+    max-width: 10rem; /*(120px)*/
 
     &:before {
       content: '';

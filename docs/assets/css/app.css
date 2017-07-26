@@ -3383,11 +3383,34 @@ h6{
  	/*fonts*/
  	/*'Arvo', serif;*/
  }
+html, body {
+  height: 100%;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   letter-spacing: normal;
-  color: #423b31;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #423b31
+}
+body::after, body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    display: block;
+    background: url('../img/veg.jpg') no-repeat center center scroll #698e93;
+    background-size: cover;
+}
+body::after{
+    background: rgba(0, 0, 0, .35);
 }
 h1,
 h2,
@@ -3397,19 +3420,33 @@ h5,
 h6 {
   font-family: 'Arvo', serif;
 }
+a {
+  color: #a14730;
+}
+.site-wrapper {
+  min-height: 100%;
+  position: relative;
+  z-index: 2;
+}
 .main {
-  padding-top: 80px;
-  padding-top: 8rem;
+  padding-top: 120px;
+  padding-top: 12rem;
   padding-bottom: 80px;
   padding-bottom: 8rem;
 }
 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   background: #415455;
   color: #ffffff;
   padding-top: 10px;
   padding-top: 1rem;
   padding-bottom: 10px;
-  padding-bottom: 1rem
+  padding-bottom: 1rem;
+  box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, .25)
 }
 .site-header a{
     color: #ffffff;
@@ -3423,8 +3460,8 @@ h6 {
     line-height: 0;
     color: transparent;
     display: block;
-    max-width: 120px;
-    max-width: 12rem;
+    max-width: 100px;
+    max-width: 10rem;
     /*(120px)*/
 }
 .site-title a:before{
@@ -3434,16 +3471,30 @@ h6 {
     background: url('../img/tlc-logo-wht.png') no-repeat center center scroll transparent;
     background-size: 100% auto;
 }
+blockquote {
+  font-size: .95em;
+  background: rgba(154, 138, 115, 0.15);
+  border-radius: .4rem;
+  border: none;
+}
 .content {
   background: #ffffff;
-  max-width: 800px;
-  max-width: 80rem;
+  max-width: 700px;
+  max-width: 70rem;
   margin: 0 auto;
   padding: 20px;
   padding: 2rem;
-  border-top: 4px solid #415455;
-  border-top: .4rem solid #415455;
+  border-top: 6px solid #698e93;
+  border-top: .6rem solid #698e93;
   box-shadow: 0 .4rem 1.2rem rgba(0, 0, 0, .25);
+}
+.content--inner {
+}
+.content--inner > *:first-child{
+    margin-top: 0;
+}
+.content--inner> *:last-child{
+    margin-bottom: 0;
 }
 
 /*# sourceMappingURL=app.css.map */
