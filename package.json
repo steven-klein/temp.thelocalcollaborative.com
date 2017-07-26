@@ -15,7 +15,7 @@
     "copy:fontawesome": "cpx \"node_modules/font-awesome/fonts/**/*\" docs/assets/fonts",
     "css": "postcss -c build/postcss.config.js",
     "js": "rollup -c build/rollup.config.js",
-    "postversion": "git push && git push --tags",
+    "postversion": "git push origin master && git push --tags",
     "release": "npm run build:prod && npm version patch",
     "serve": "browser-sync start -c build/browsersync.config.js",
     "test": "npm run build:prod",
