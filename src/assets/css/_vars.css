@@ -1,3 +1,33 @@
 /**
  * _vars.css
  */
+
+ :root{
+ 	/*COLORS*/
+ 	/*Primary body colors*/
+ 	--primaryColor: #415455; /*Our base color used for backgrounds etc. Dark Blue/Green*/
+ 	--secondaryColor: #698e93; /*Secondary base color, alt backgrounds, light text on our primary background Light Blue*/
+
+ 	/*Alternative Body Colors*/
+ 	--altColorLight: #858655;
+ 	--altColorDark: #525136;
+
+ 	/*Complimentary and Highlight color*/
+ 	--complimentaryColor: #a14730;
+ 	--highlightColor: #F19462;
+ 	--highlightColorAlt: #E6D44C;
+
+ 	/*Text Colors*/
+ 	--lightColor: #9A8A73; /*Light brown/gold*/
+ 	--darkColor: #423b31; /*dark brown*/
+ 	--nearWhite: #ffffff; /*White*/
+ 	--nearBlack: #000000; /*Black*/
+
+ 	/*fonts*/
+ 	/*'Arvo', serif;*/
+ 	--baseFont: 'Montserrat', sans-serif;
+ 	--secondaryFont: 'Arvo', serif;
+ 	--baseFontSize: 1rem;
+ }
+
+@custom-selector :--titles h1, h2, h3, h4, h5, h6;

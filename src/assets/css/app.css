@@ -1,4 +1,17 @@
 /**
  * app.css
  */
-@import './_vars.css';
+
+/*Fonts*/
+@import "//fonts.googleapis.com/css?family=Arvo:400,700|Montserrat:700,400";
+
+/*Modules*/
+@import "normalize-css";
+@import "milligram-cssnext";
+@import "font-awesome";
+
+/*Local*/
+@import "_vars.css";
+@import "_main.css";
+@import "_header.css";
+@import "_content.css";

@@ -11,6 +11,7 @@
         "copy": "npm-run-all --parallel copy:**",
         "copy:img": "cpx \"src/assets/img/**/*.{jpg,jpeg,gif,png,svg}\" docs/assets/img",
         "copy:htaccess": "cpx src/.htaccess docs",
+        "copy:fontawesome": "cpx \"node_modules/font-awesome/fonts/**/*\" docs/assets/fonts",
         "css": "postcss -c build/postcss.config.js",
         "js": "rollup -c build/rollup.config.js",
         "postversion": "git push && git push --tags",
@@ -52,5 +53,10 @@
     },
     "browserslist": [
         "last 2 versions"
-    ]
+    ],
+    "dependencies": {
+        "font-awesome": "^4.7.0",
+        "milligram-cssnext": "^1.0.1",
+        "normalize-css": "^2.3.1"
+    }
 }

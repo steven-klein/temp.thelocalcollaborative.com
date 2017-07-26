@@ -1,0 +1,15 @@
+body {
+  font-family: var(--baseFont);
+  font-weight: normal;
+  letter-spacing: normal;
+  color: var(--darkColor);
+}
+
+:--titles {
+  font-family: var(--secondaryFont);
+}
+
+.main {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
