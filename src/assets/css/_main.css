@@ -6,7 +6,7 @@ body {
   font-family: var(--baseFont);
   font-weight: normal;
   letter-spacing: normal;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: var(--darkColor);
 
@@ -36,6 +36,11 @@ body {
 
 a {
   color: var(--complimentaryColor);
+}
+
+dl, ol, ul {
+  padding-left: 4rem;
+  list-style-position: outside;
 }
 
 .site-wrapper {

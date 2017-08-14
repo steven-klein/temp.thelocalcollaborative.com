@@ -3,6 +3,7 @@ blockquote {
   background: color(var(--lightColor) alpha(15%));
   border-radius: .4rem;
   border: none;
+  font-style: italic;
 }
 
 .content {
