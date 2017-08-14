@@ -2,7 +2,7 @@
   "name": "thelocalcollaborative.com",
   "description": "tlc.com and biz.tlc.com",
   "author": "Steven Klein <steven.p.klein@gmail.com>",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "private": true,
   "scripts": {
     "build": "npm-run-all --serial clean --parallel copy js css templates",
